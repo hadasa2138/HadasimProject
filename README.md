@@ -29,7 +29,7 @@ After verifying the member's details and adding them to the list of members, you
 <img src="https://github.com/hadasa2138/HadasimProject/blob/main/Ex1%206.png" alt="member details">
 
  In case you add a new member and enter details of an existing member, you will be presented with the option to update the details of the existing member. If you choose 'Yes,' the details will be updated, and you will be redirected to the member's updated card
-<img src="https://github.com/hadasa2138/HadasimProject/blob/main/Ex1%25.png" alt="member updated card">
+<img src="https://github.com/hadasa2138/HadasimProject/blob/main/Ex%205.png" alt="member updated card">
 
 At any stage, you can return to the main screen for the list of members. By clicking on each customer, you will be directed to the customer's card where you can view/update/delete his details.
 <img src="https://github.com/hadasa2138/HadasimProject/blob/main/Ex1%203.png" alt="member details">
