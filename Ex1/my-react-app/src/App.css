@@ -1,0 +1,171 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 238, 255);
+}
+
+.member{
+  top: 0;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  width: 50%;
+  float: left; /* יוצר צפיפות שלא יהיה פס גלילה */
+}
+
+/* עיצוב עמוד שני */
+.covid {
+  width: 50%;
+  float: right; 
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  right: 0;
+  top: 10;
+  overflow: auto;
+  background-color: rgb(224, 238, 255);
+}
+
+/* עיצוב טופס במרכז חצי העמוד השמאלי */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* תאים לגובה העמוד */
+}
+
+/* עיצוב כותרת */
+h1 {
+  font-size: 18px;
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* עיצוב ריבועי חיסונים */
+.vaccination {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px ;
+  width: 80%;
+  background-color: #fff;
+}
+
+.vaccination h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.vaccination div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 0;
+}
+
+.vaccination div input {
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  width: 70%;
+}
+
+.vaccination div button {
+  padding: 5px 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  cursor: pointer;
+  width: 20%;
+}
+
+.linkcss {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 5px;
+  background-color: rgb(224, 238, 255);
+  padding: 2px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+#covidTitle{
+  text-align: center;
+}
+
+/* עיצוב כפתור מחיקה */
+.delete-button {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+/* עיצוב ריבוע הוספת חיסון */
+.vaccination.add {
+  background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .covid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* כפתור חבר חדש*/
+.sideButtons{
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 5px; /* צמצום המרווח בין הכפתורים ל-5px */
+  cursor: pointer;
+  left: 3%; /* התאם את המיקום לפי הצורך */
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  clear: left;
+  position: fixed;
+  margin-left: 10px; /* מרווח משמאל */
+  /*z-index: 1;  ודא שהכפתור מופיע מעל תוכן אחר */
+
+}
+ 
+/* סגנון מרחף (hover) */
+.sideButtons:hover {
+  background-color: #ddd;
+}
+
+/* סגנון לחיצה (active) */
+.sideButtons:active {
+  background-color: #ccc;
+}
+
+
+@media (max-width: 1000px) {
+  .sideButtons {
+    margin-left: 0; /* מרווח משמאל בפלטפורמות קטנות יותר */
+    width: 150px; /* כדי שהכפתור יהיה ברוחב מלא */
+    position: relative;
+  }
+}
